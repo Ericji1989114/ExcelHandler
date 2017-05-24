@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB5CC2101ECEC2BD003FB1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC20F1ECEC2BD003FB1EB /* AppDelegate.swift */; };
+		DB5CC2121ECEC2BD003FB1EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC2111ECEC2BD003FB1EB /* ViewController.swift */; };
+		DB5CC2141ECEC2BD003FB1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5CC2131ECEC2BD003FB1EB /* Assets.xcassets */; };
+		DB5CC2171ECEC2BD003FB1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5CC2151ECEC2BD003FB1EB /* Main.storyboard */; };
+		DB5CC47C1ECEC4D6003FB1EB /* BRACalcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC43B1ECEC4D6003FB1EB /* BRACalcChain.m */; };
+		DB5CC47D1ECEC4D6003FB1EB /* BRACalcChainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC43D1ECEC4D6003FB1EB /* BRACalcChainCell.m */; };
+		DB5CC47E1ECEC4D6003FB1EB /* BRACell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC43F1ECEC4D6003FB1EB /* BRACell.m */; };
+		DB5CC47F1ECEC4D6003FB1EB /* BRACellFill.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4411ECEC4D6003FB1EB /* BRACellFill.m */; };
+		DB5CC4801ECEC4D6003FB1EB /* BRACellFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4431ECEC4D6003FB1EB /* BRACellFormat.m */; };
+		DB5CC4811ECEC4D6003FB1EB /* BRACellRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4451ECEC4D6003FB1EB /* BRACellRange.m */; };
+		DB5CC4821ECEC4D6003FB1EB /* BRAColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4471ECEC4D6003FB1EB /* BRAColumn.m */; };
+		DB5CC4831ECEC4D6003FB1EB /* BRAComment.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4491ECEC4D6003FB1EB /* BRAComment.m */; };
+		DB5CC4841ECEC4D6003FB1EB /* BRAComments.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC44B1ECEC4D6003FB1EB /* BRAComments.m */; };
+		DB5CC4851ECEC4D6003FB1EB /* BRAContentTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC44D1ECEC4D6003FB1EB /* BRAContentTypes.m */; };
+		DB5CC4861ECEC4D6003FB1EB /* BRAContentTypesDefaultExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC44F1ECEC4D6003FB1EB /* BRAContentTypesDefaultExtension.m */; };
+		DB5CC4871ECEC4D6003FB1EB /* BRAContentTypesOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4511ECEC4D6003FB1EB /* BRAContentTypesOverride.m */; };
+		DB5CC4881ECEC4D6003FB1EB /* BRADrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4531ECEC4D6003FB1EB /* BRADrawing.m */; };
+		DB5CC4891ECEC4D6003FB1EB /* BRAElementWithRelationships.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4551ECEC4D6003FB1EB /* BRAElementWithRelationships.m */; };
+		DB5CC48A1ECEC4D6003FB1EB /* BRAImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4571ECEC4D6003FB1EB /* BRAImage.m */; };
+		DB5CC48B1ECEC4D6003FB1EB /* BRAMergeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4591ECEC4D6003FB1EB /* BRAMergeCell.m */; };
+		DB5CC48C1ECEC4D6003FB1EB /* BRANumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC45B1ECEC4D6003FB1EB /* BRANumberFormat.m */; };
+		DB5CC48D1ECEC4D6003FB1EB /* BRAOfficeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC45D1ECEC4D6003FB1EB /* BRAOfficeDocument.m */; };
+		DB5CC48E1ECEC4D6003FB1EB /* BRAOfficeDocumentPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC45F1ECEC4D6003FB1EB /* BRAOfficeDocumentPackage.m */; };
+		DB5CC48F1ECEC4D6003FB1EB /* BRAOpenXmlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4611ECEC4D6003FB1EB /* BRAOpenXmlElement.m */; };
+		DB5CC4901ECEC4D6003FB1EB /* BRAOpenXmlSubElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4631ECEC4D6003FB1EB /* BRAOpenXmlSubElement.m */; };
+		DB5CC4911ECEC4D6003FB1EB /* BRARelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4671ECEC4D6003FB1EB /* BRARelationship.m */; };
+		DB5CC4921ECEC4D6003FB1EB /* BRARelationships.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4691ECEC4D6003FB1EB /* BRARelationships.m */; };
+		DB5CC4931ECEC4D6003FB1EB /* BRARow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC46B1ECEC4D6003FB1EB /* BRARow.m */; };
+		DB5CC4941ECEC4D6003FB1EB /* BRASharedString.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC46D1ECEC4D6003FB1EB /* BRASharedString.m */; };
+		DB5CC4951ECEC4D6003FB1EB /* BRASharedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC46F1ECEC4D6003FB1EB /* BRASharedStrings.m */; };
+		DB5CC4961ECEC4D6003FB1EB /* BRASheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4711ECEC4D6003FB1EB /* BRASheet.m */; };
+		DB5CC4971ECEC4D6003FB1EB /* BRAStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4731ECEC4D6003FB1EB /* BRAStyles.m */; };
+		DB5CC4981ECEC4D6003FB1EB /* BRATheme.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4751ECEC4D6003FB1EB /* BRATheme.m */; };
+		DB5CC4991ECEC4D6003FB1EB /* BRAVmlDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4771ECEC4D6003FB1EB /* BRAVmlDrawing.m */; };
+		DB5CC49A1ECEC4D6003FB1EB /* BRAWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4791ECEC4D6003FB1EB /* BRAWorksheet.m */; };
+		DB5CC49B1ECEC4D6003FB1EB /* BRAWorksheetDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC47B1ECEC4D6003FB1EB /* BRAWorksheetDrawing.m */; };
+		DB5CC4A81ECEC55B003FB1EB /* NativeColor+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC49D1ECEC55B003FB1EB /* NativeColor+HTML.m */; };
+		DB5CC4A91ECEC55B003FB1EB /* NativeColor+OpenXML.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC49F1ECEC55B003FB1EB /* NativeColor+OpenXML.m */; };
+		DB5CC4AA1ECEC55B003FB1EB /* NativeFont+BoldItalic.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4A11ECEC55B003FB1EB /* NativeFont+BoldItalic.m */; };
+		DB5CC4AB1ECEC55B003FB1EB /* NSDictionary+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4A31ECEC55B003FB1EB /* NSDictionary+DeepCopy.m */; };
+		DB5CC4AC1ECEC55B003FB1EB /* NSDictionary+OpenXMLDictionaryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4A51ECEC55B003FB1EB /* NSDictionary+OpenXMLDictionaryParser.m */; };
+		DB5CC4AD1ECEC55B003FB1EB /* NSDictionary+OpenXmlString.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4A71ECEC55B003FB1EB /* NSDictionary+OpenXmlString.m */; };
+		DB5CC4B01ECEC58C003FB1EB /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4AF1ECEC58C003FB1EB /* XMLDictionary.m */; };
+		DB5CC4D81ECEC5DF003FB1EB /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4B51ECEC5DF003FB1EB /* aescrypt.c */; };
+		DB5CC4D91ECEC5DF003FB1EB /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4B61ECEC5DF003FB1EB /* aeskey.c */; };
+		DB5CC4DA1ECEC5DF003FB1EB /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4B81ECEC5DF003FB1EB /* aestab.c */; };
+		DB5CC4DB1ECEC5DF003FB1EB /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4BC1ECEC5DF003FB1EB /* entropy.c */; };
+		DB5CC4DC1ECEC5DF003FB1EB /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4BE1ECEC5DF003FB1EB /* fileenc.c */; };
+		DB5CC4DD1ECEC5DF003FB1EB /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4C01ECEC5DF003FB1EB /* hmac.c */; };
+		DB5CC4DE1ECEC5DF003FB1EB /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4C21ECEC5DF003FB1EB /* prng.c */; };
+		DB5CC4DF1ECEC5DF003FB1EB /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4C41ECEC5DF003FB1EB /* pwd2key.c */; };
+		DB5CC4E01ECEC5DF003FB1EB /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4C61ECEC5DF003FB1EB /* sha1.c */; };
+		DB5CC4E11ECEC5DF003FB1EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB5CC4C81ECEC5DF003FB1EB /* Info.plist */; };
+		DB5CC4E21ECEC5DF003FB1EB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4CB1ECEC5DF003FB1EB /* ioapi.c */; };
+		DB5CC4E31ECEC5DF003FB1EB /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4CD1ECEC5DF003FB1EB /* mztools.c */; };
+		DB5CC4E41ECEC5DF003FB1EB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4CF1ECEC5DF003FB1EB /* unzip.c */; };
+		DB5CC4E51ECEC5DF003FB1EB /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4D11ECEC5DF003FB1EB /* zip.c */; };
+		DB5CC4E61ECEC5DF003FB1EB /* SSZipArchive+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4D31ECEC5DF003FB1EB /* SSZipArchive+Swift.swift */; };
+		DB5CC4E71ECEC5DF003FB1EB /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4D51ECEC5DF003FB1EB /* SSZipArchive.m */; };
+		DB5CC4EA1ECEC600003FB1EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5CC4E91ECEC600003FB1EB /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB5CC20C1ECEC2BD003FB1EB /* TrainExcel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainExcel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5CC20F1ECEC2BD003FB1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB5CC2111ECEC2BD003FB1EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB5CC2131ECEC2BD003FB1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB5CC2161ECEC2BD003FB1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB5CC2181ECEC2BD003FB1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5CC4271ECEC3CA003FB1EB /* TrainExcel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrainExcel-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB5CC43A1ECEC4D6003FB1EB /* BRACalcChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRACalcChain.h; sourceTree = "<group>"; };
+		DB5CC43B1ECEC4D6003FB1EB /* BRACalcChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRACalcChain.m; sourceTree = "<group>"; };
+		DB5CC43C1ECEC4D6003FB1EB /* BRACalcChainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRACalcChainCell.h; sourceTree = "<group>"; };
+		DB5CC43D1ECEC4D6003FB1EB /* BRACalcChainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRACalcChainCell.m; sourceTree = "<group>"; };
+		DB5CC43E1ECEC4D6003FB1EB /* BRACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRACell.h; sourceTree = "<group>"; };
+		DB5CC43F1ECEC4D6003FB1EB /* BRACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRACell.m; sourceTree = "<group>"; };
+		DB5CC4401ECEC4D6003FB1EB /* BRACellFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRACellFill.h; sourceTree = "<group>"; };
+		DB5CC4411ECEC4D6003FB1EB /* BRACellFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRACellFill.m; sourceTree = "<group>"; };
+		DB5CC4421ECEC4D6003FB1EB /* BRACellFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRACellFormat.h; sourceTree = "<group>"; };
+		DB5CC4431ECEC4D6003FB1EB /* BRACellFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRACellFormat.m; sourceTree = "<group>"; };
+		DB5CC4441ECEC4D6003FB1EB /* BRACellRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRACellRange.h; sourceTree = "<group>"; };
+		DB5CC4451ECEC4D6003FB1EB /* BRACellRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRACellRange.m; sourceTree = "<group>"; };
+		DB5CC4461ECEC4D6003FB1EB /* BRAColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAColumn.h; sourceTree = "<group>"; };
+		DB5CC4471ECEC4D6003FB1EB /* BRAColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAColumn.m; sourceTree = "<group>"; };
+		DB5CC4481ECEC4D6003FB1EB /* BRAComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAComment.h; sourceTree = "<group>"; };
+		DB5CC4491ECEC4D6003FB1EB /* BRAComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAComment.m; sourceTree = "<group>"; };
+		DB5CC44A1ECEC4D6003FB1EB /* BRAComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAComments.h; sourceTree = "<group>"; };
+		DB5CC44B1ECEC4D6003FB1EB /* BRAComments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAComments.m; sourceTree = "<group>"; };
+		DB5CC44C1ECEC4D6003FB1EB /* BRAContentTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAContentTypes.h; sourceTree = "<group>"; };
+		DB5CC44D1ECEC4D6003FB1EB /* BRAContentTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAContentTypes.m; sourceTree = "<group>"; };
+		DB5CC44E1ECEC4D6003FB1EB /* BRAContentTypesDefaultExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAContentTypesDefaultExtension.h; sourceTree = "<group>"; };
+		DB5CC44F1ECEC4D6003FB1EB /* BRAContentTypesDefaultExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAContentTypesDefaultExtension.m; sourceTree = "<group>"; };
+		DB5CC4501ECEC4D6003FB1EB /* BRAContentTypesOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAContentTypesOverride.h; sourceTree = "<group>"; };
+		DB5CC4511ECEC4D6003FB1EB /* BRAContentTypesOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAContentTypesOverride.m; sourceTree = "<group>"; };
+		DB5CC4521ECEC4D6003FB1EB /* BRADrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRADrawing.h; sourceTree = "<group>"; };
+		DB5CC4531ECEC4D6003FB1EB /* BRADrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRADrawing.m; sourceTree = "<group>"; };
+		DB5CC4541ECEC4D6003FB1EB /* BRAElementWithRelationships.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAElementWithRelationships.h; sourceTree = "<group>"; };
+		DB5CC4551ECEC4D6003FB1EB /* BRAElementWithRelationships.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAElementWithRelationships.m; sourceTree = "<group>"; };
+		DB5CC4561ECEC4D6003FB1EB /* BRAImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAImage.h; sourceTree = "<group>"; };
+		DB5CC4571ECEC4D6003FB1EB /* BRAImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAImage.m; sourceTree = "<group>"; };
+		DB5CC4581ECEC4D6003FB1EB /* BRAMergeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAMergeCell.h; sourceTree = "<group>"; };
+		DB5CC4591ECEC4D6003FB1EB /* BRAMergeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAMergeCell.m; sourceTree = "<group>"; };
+		DB5CC45A1ECEC4D6003FB1EB /* BRANumberFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRANumberFormat.h; sourceTree = "<group>"; };
+		DB5CC45B1ECEC4D6003FB1EB /* BRANumberFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRANumberFormat.m; sourceTree = "<group>"; };
+		DB5CC45C1ECEC4D6003FB1EB /* BRAOfficeDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAOfficeDocument.h; sourceTree = "<group>"; };
+		DB5CC45D1ECEC4D6003FB1EB /* BRAOfficeDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAOfficeDocument.m; sourceTree = "<group>"; };
+		DB5CC45E1ECEC4D6003FB1EB /* BRAOfficeDocumentPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAOfficeDocumentPackage.h; sourceTree = "<group>"; };
+		DB5CC45F1ECEC4D6003FB1EB /* BRAOfficeDocumentPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAOfficeDocumentPackage.m; sourceTree = "<group>"; };
+		DB5CC4601ECEC4D6003FB1EB /* BRAOpenXmlElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAOpenXmlElement.h; sourceTree = "<group>"; };
+		DB5CC4611ECEC4D6003FB1EB /* BRAOpenXmlElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAOpenXmlElement.m; sourceTree = "<group>"; };
+		DB5CC4621ECEC4D6003FB1EB /* BRAOpenXmlSubElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAOpenXmlSubElement.h; sourceTree = "<group>"; };
+		DB5CC4631ECEC4D6003FB1EB /* BRAOpenXmlSubElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAOpenXmlSubElement.m; sourceTree = "<group>"; };
+		DB5CC4641ECEC4D6003FB1EB /* BRAPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAPlatformSpecificDefines.h; sourceTree = "<group>"; };
+		DB5CC4651ECEC4D6003FB1EB /* BRARelatedToColumnAndRowProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRARelatedToColumnAndRowProtocol.h; sourceTree = "<group>"; };
+		DB5CC4661ECEC4D6003FB1EB /* BRARelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRARelationship.h; sourceTree = "<group>"; };
+		DB5CC4671ECEC4D6003FB1EB /* BRARelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRARelationship.m; sourceTree = "<group>"; };
+		DB5CC4681ECEC4D6003FB1EB /* BRARelationships.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRARelationships.h; sourceTree = "<group>"; };
+		DB5CC4691ECEC4D6003FB1EB /* BRARelationships.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRARelationships.m; sourceTree = "<group>"; };
+		DB5CC46A1ECEC4D6003FB1EB /* BRARow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRARow.h; sourceTree = "<group>"; };
+		DB5CC46B1ECEC4D6003FB1EB /* BRARow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRARow.m; sourceTree = "<group>"; };
+		DB5CC46C1ECEC4D6003FB1EB /* BRASharedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRASharedString.h; sourceTree = "<group>"; };
+		DB5CC46D1ECEC4D6003FB1EB /* BRASharedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRASharedString.m; sourceTree = "<group>"; };
+		DB5CC46E1ECEC4D6003FB1EB /* BRASharedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRASharedStrings.h; sourceTree = "<group>"; };
+		DB5CC46F1ECEC4D6003FB1EB /* BRASharedStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRASharedStrings.m; sourceTree = "<group>"; };
+		DB5CC4701ECEC4D6003FB1EB /* BRASheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRASheet.h; sourceTree = "<group>"; };
+		DB5CC4711ECEC4D6003FB1EB /* BRASheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRASheet.m; sourceTree = "<group>"; };
+		DB5CC4721ECEC4D6003FB1EB /* BRAStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAStyles.h; sourceTree = "<group>"; };
+		DB5CC4731ECEC4D6003FB1EB /* BRAStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAStyles.m; sourceTree = "<group>"; };
+		DB5CC4741ECEC4D6003FB1EB /* BRATheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRATheme.h; sourceTree = "<group>"; };
+		DB5CC4751ECEC4D6003FB1EB /* BRATheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRATheme.m; sourceTree = "<group>"; };
+		DB5CC4761ECEC4D6003FB1EB /* BRAVmlDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAVmlDrawing.h; sourceTree = "<group>"; };
+		DB5CC4771ECEC4D6003FB1EB /* BRAVmlDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAVmlDrawing.m; sourceTree = "<group>"; };
+		DB5CC4781ECEC4D6003FB1EB /* BRAWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAWorksheet.h; sourceTree = "<group>"; };
+		DB5CC4791ECEC4D6003FB1EB /* BRAWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAWorksheet.m; sourceTree = "<group>"; };
+		DB5CC47A1ECEC4D6003FB1EB /* BRAWorksheetDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAWorksheetDrawing.h; sourceTree = "<group>"; };
+		DB5CC47B1ECEC4D6003FB1EB /* BRAWorksheetDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAWorksheetDrawing.m; sourceTree = "<group>"; };
+		DB5CC49C1ECEC55B003FB1EB /* NativeColor+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NativeColor+HTML.h"; sourceTree = "<group>"; };
+		DB5CC49D1ECEC55B003FB1EB /* NativeColor+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeColor+HTML.m"; sourceTree = "<group>"; };
+		DB5CC49E1ECEC55B003FB1EB /* NativeColor+OpenXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NativeColor+OpenXML.h"; sourceTree = "<group>"; };
+		DB5CC49F1ECEC55B003FB1EB /* NativeColor+OpenXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeColor+OpenXML.m"; sourceTree = "<group>"; };
+		DB5CC4A01ECEC55B003FB1EB /* NativeFont+BoldItalic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NativeFont+BoldItalic.h"; sourceTree = "<group>"; };
+		DB5CC4A11ECEC55B003FB1EB /* NativeFont+BoldItalic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeFont+BoldItalic.m"; sourceTree = "<group>"; };
+		DB5CC4A21ECEC55B003FB1EB /* NSDictionary+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DeepCopy.h"; sourceTree = "<group>"; };
+		DB5CC4A31ECEC55B003FB1EB /* NSDictionary+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DeepCopy.m"; sourceTree = "<group>"; };
+		DB5CC4A41ECEC55B003FB1EB /* NSDictionary+OpenXMLDictionaryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OpenXMLDictionaryParser.h"; sourceTree = "<group>"; };
+		DB5CC4A51ECEC55B003FB1EB /* NSDictionary+OpenXMLDictionaryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OpenXMLDictionaryParser.m"; sourceTree = "<group>"; };
+		DB5CC4A61ECEC55B003FB1EB /* NSDictionary+OpenXmlString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OpenXmlString.h"; sourceTree = "<group>"; };
+		DB5CC4A71ECEC55B003FB1EB /* NSDictionary+OpenXmlString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OpenXmlString.m"; sourceTree = "<group>"; };
+		DB5CC4AE1ECEC58C003FB1EB /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		DB5CC4AF1ECEC58C003FB1EB /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		DB5CC4B31ECEC5DF003FB1EB /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		DB5CC4B41ECEC5DF003FB1EB /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		DB5CC4B51ECEC5DF003FB1EB /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		DB5CC4B61ECEC5DF003FB1EB /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		DB5CC4B71ECEC5DF003FB1EB /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		DB5CC4B81ECEC5DF003FB1EB /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		DB5CC4B91ECEC5DF003FB1EB /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		DB5CC4BA1ECEC5DF003FB1EB /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		DB5CC4BB1ECEC5DF003FB1EB /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		DB5CC4BC1ECEC5DF003FB1EB /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		DB5CC4BD1ECEC5DF003FB1EB /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		DB5CC4BE1ECEC5DF003FB1EB /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		DB5CC4BF1ECEC5DF003FB1EB /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		DB5CC4C01ECEC5DF003FB1EB /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		DB5CC4C11ECEC5DF003FB1EB /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		DB5CC4C21ECEC5DF003FB1EB /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		DB5CC4C31ECEC5DF003FB1EB /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		DB5CC4C41ECEC5DF003FB1EB /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		DB5CC4C51ECEC5DF003FB1EB /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		DB5CC4C61ECEC5DF003FB1EB /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		DB5CC4C71ECEC5DF003FB1EB /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		DB5CC4C81ECEC5DF003FB1EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5CC4CA1ECEC5DF003FB1EB /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		DB5CC4CB1ECEC5DF003FB1EB /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		DB5CC4CC1ECEC5DF003FB1EB /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		DB5CC4CD1ECEC5DF003FB1EB /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		DB5CC4CE1ECEC5DF003FB1EB /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		DB5CC4CF1ECEC5DF003FB1EB /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		DB5CC4D01ECEC5DF003FB1EB /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		DB5CC4D11ECEC5DF003FB1EB /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		DB5CC4D21ECEC5DF003FB1EB /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		DB5CC4D31ECEC5DF003FB1EB /* SSZipArchive+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SSZipArchive+Swift.swift"; sourceTree = "<group>"; };
+		DB5CC4D41ECEC5DF003FB1EB /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		DB5CC4D51ECEC5DF003FB1EB /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		DB5CC4D61ECEC5DF003FB1EB /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		DB5CC4D71ECEC5DF003FB1EB /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		DB5CC4E91ECEC600003FB1EB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB5CC2091ECEC2BD003FB1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5CC4EA1ECEC600003FB1EB /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB5CC2031ECEC2BD003FB1EB = {
+			isa = PBXGroup;
+			children = (
+				DB5CC20E1ECEC2BD003FB1EB /* TrainExcel */,
+				DB5CC20D1ECEC2BD003FB1EB /* Products */,
+				DB5CC4E81ECEC600003FB1EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB5CC20D1ECEC2BD003FB1EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC20C1ECEC2BD003FB1EB /* TrainExcel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB5CC20E1ECEC2BD003FB1EB /* TrainExcel */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC4B11ECEC5DF003FB1EB /* SSZipArchive */,
+				DB5CC4201ECEC34A003FB1EB /* XlsxReaderWriter */,
+				DB5CC20F1ECEC2BD003FB1EB /* AppDelegate.swift */,
+				DB5CC2111ECEC2BD003FB1EB /* ViewController.swift */,
+				DB5CC4271ECEC3CA003FB1EB /* TrainExcel-Bridging-Header.h */,
+				DB5CC2131ECEC2BD003FB1EB /* Assets.xcassets */,
+				DB5CC2151ECEC2BD003FB1EB /* Main.storyboard */,
+				DB5CC2181ECEC2BD003FB1EB /* Info.plist */,
+			);
+			path = TrainExcel;
+			sourceTree = "<group>";
+		};
+		DB5CC4201ECEC34A003FB1EB /* XlsxReaderWriter */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC4AE1ECEC58C003FB1EB /* XMLDictionary.h */,
+				DB5CC4AF1ECEC58C003FB1EB /* XMLDictionary.m */,
+				DB5CC49C1ECEC55B003FB1EB /* NativeColor+HTML.h */,
+				DB5CC49D1ECEC55B003FB1EB /* NativeColor+HTML.m */,
+				DB5CC49E1ECEC55B003FB1EB /* NativeColor+OpenXML.h */,
+				DB5CC49F1ECEC55B003FB1EB /* NativeColor+OpenXML.m */,
+				DB5CC4A01ECEC55B003FB1EB /* NativeFont+BoldItalic.h */,
+				DB5CC4A11ECEC55B003FB1EB /* NativeFont+BoldItalic.m */,
+				DB5CC4A21ECEC55B003FB1EB /* NSDictionary+DeepCopy.h */,
+				DB5CC4A31ECEC55B003FB1EB /* NSDictionary+DeepCopy.m */,
+				DB5CC4A41ECEC55B003FB1EB /* NSDictionary+OpenXMLDictionaryParser.h */,
+				DB5CC4A51ECEC55B003FB1EB /* NSDictionary+OpenXMLDictionaryParser.m */,
+				DB5CC4A61ECEC55B003FB1EB /* NSDictionary+OpenXmlString.h */,
+				DB5CC4A71ECEC55B003FB1EB /* NSDictionary+OpenXmlString.m */,
+				DB5CC43A1ECEC4D6003FB1EB /* BRACalcChain.h */,
+				DB5CC43B1ECEC4D6003FB1EB /* BRACalcChain.m */,
+				DB5CC43C1ECEC4D6003FB1EB /* BRACalcChainCell.h */,
+				DB5CC43D1ECEC4D6003FB1EB /* BRACalcChainCell.m */,
+				DB5CC43E1ECEC4D6003FB1EB /* BRACell.h */,
+				DB5CC43F1ECEC4D6003FB1EB /* BRACell.m */,
+				DB5CC4401ECEC4D6003FB1EB /* BRACellFill.h */,
+				DB5CC4411ECEC4D6003FB1EB /* BRACellFill.m */,
+				DB5CC4421ECEC4D6003FB1EB /* BRACellFormat.h */,
+				DB5CC4431ECEC4D6003FB1EB /* BRACellFormat.m */,
+				DB5CC4441ECEC4D6003FB1EB /* BRACellRange.h */,
+				DB5CC4451ECEC4D6003FB1EB /* BRACellRange.m */,
+				DB5CC4461ECEC4D6003FB1EB /* BRAColumn.h */,
+				DB5CC4471ECEC4D6003FB1EB /* BRAColumn.m */,
+				DB5CC4481ECEC4D6003FB1EB /* BRAComment.h */,
+				DB5CC4491ECEC4D6003FB1EB /* BRAComment.m */,
+				DB5CC44A1ECEC4D6003FB1EB /* BRAComments.h */,
+				DB5CC44B1ECEC4D6003FB1EB /* BRAComments.m */,
+				DB5CC44C1ECEC4D6003FB1EB /* BRAContentTypes.h */,
+				DB5CC44D1ECEC4D6003FB1EB /* BRAContentTypes.m */,
+				DB5CC44E1ECEC4D6003FB1EB /* BRAContentTypesDefaultExtension.h */,
+				DB5CC44F1ECEC4D6003FB1EB /* BRAContentTypesDefaultExtension.m */,
+				DB5CC4501ECEC4D6003FB1EB /* BRAContentTypesOverride.h */,
+				DB5CC4511ECEC4D6003FB1EB /* BRAContentTypesOverride.m */,
+				DB5CC4521ECEC4D6003FB1EB /* BRADrawing.h */,
+				DB5CC4531ECEC4D6003FB1EB /* BRADrawing.m */,
+				DB5CC4541ECEC4D6003FB1EB /* BRAElementWithRelationships.h */,
+				DB5CC4551ECEC4D6003FB1EB /* BRAElementWithRelationships.m */,
+				DB5CC4561ECEC4D6003FB1EB /* BRAImage.h */,
+				DB5CC4571ECEC4D6003FB1EB /* BRAImage.m */,
+				DB5CC4581ECEC4D6003FB1EB /* BRAMergeCell.h */,
+				DB5CC4591ECEC4D6003FB1EB /* BRAMergeCell.m */,
+				DB5CC45A1ECEC4D6003FB1EB /* BRANumberFormat.h */,
+				DB5CC45B1ECEC4D6003FB1EB /* BRANumberFormat.m */,
+				DB5CC45C1ECEC4D6003FB1EB /* BRAOfficeDocument.h */,
+				DB5CC45D1ECEC4D6003FB1EB /* BRAOfficeDocument.m */,
+				DB5CC45E1ECEC4D6003FB1EB /* BRAOfficeDocumentPackage.h */,
+				DB5CC45F1ECEC4D6003FB1EB /* BRAOfficeDocumentPackage.m */,
+				DB5CC4601ECEC4D6003FB1EB /* BRAOpenXmlElement.h */,
+				DB5CC4611ECEC4D6003FB1EB /* BRAOpenXmlElement.m */,
+				DB5CC4621ECEC4D6003FB1EB /* BRAOpenXmlSubElement.h */,
+				DB5CC4631ECEC4D6003FB1EB /* BRAOpenXmlSubElement.m */,
+				DB5CC4641ECEC4D6003FB1EB /* BRAPlatformSpecificDefines.h */,
+				DB5CC4651ECEC4D6003FB1EB /* BRARelatedToColumnAndRowProtocol.h */,
+				DB5CC4661ECEC4D6003FB1EB /* BRARelationship.h */,
+				DB5CC4671ECEC4D6003FB1EB /* BRARelationship.m */,
+				DB5CC4681ECEC4D6003FB1EB /* BRARelationships.h */,
+				DB5CC4691ECEC4D6003FB1EB /* BRARelationships.m */,
+				DB5CC46A1ECEC4D6003FB1EB /* BRARow.h */,
+				DB5CC46B1ECEC4D6003FB1EB /* BRARow.m */,
+				DB5CC46C1ECEC4D6003FB1EB /* BRASharedString.h */,
+				DB5CC46D1ECEC4D6003FB1EB /* BRASharedString.m */,
+				DB5CC46E1ECEC4D6003FB1EB /* BRASharedStrings.h */,
+				DB5CC46F1ECEC4D6003FB1EB /* BRASharedStrings.m */,
+				DB5CC4701ECEC4D6003FB1EB /* BRASheet.h */,
+				DB5CC4711ECEC4D6003FB1EB /* BRASheet.m */,
+				DB5CC4721ECEC4D6003FB1EB /* BRAStyles.h */,
+				DB5CC4731ECEC4D6003FB1EB /* BRAStyles.m */,
+				DB5CC4741ECEC4D6003FB1EB /* BRATheme.h */,
+				DB5CC4751ECEC4D6003FB1EB /* BRATheme.m */,
+				DB5CC4761ECEC4D6003FB1EB /* BRAVmlDrawing.h */,
+				DB5CC4771ECEC4D6003FB1EB /* BRAVmlDrawing.m */,
+				DB5CC4781ECEC4D6003FB1EB /* BRAWorksheet.h */,
+				DB5CC4791ECEC4D6003FB1EB /* BRAWorksheet.m */,
+				DB5CC47A1ECEC4D6003FB1EB /* BRAWorksheetDrawing.h */,
+				DB5CC47B1ECEC4D6003FB1EB /* BRAWorksheetDrawing.m */,
+			);
+			name = XlsxReaderWriter;
+			sourceTree = "<group>";
+		};
+		DB5CC4B11ECEC5DF003FB1EB /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC4B21ECEC5DF003FB1EB /* aes */,
+				DB5CC4C81ECEC5DF003FB1EB /* Info.plist */,
+				DB5CC4C91ECEC5DF003FB1EB /* minizip */,
+				DB5CC4D31ECEC5DF003FB1EB /* SSZipArchive+Swift.swift */,
+				DB5CC4D41ECEC5DF003FB1EB /* SSZipArchive.h */,
+				DB5CC4D51ECEC5DF003FB1EB /* SSZipArchive.m */,
+				DB5CC4D61ECEC5DF003FB1EB /* SSZipCommon.h */,
+				DB5CC4D71ECEC5DF003FB1EB /* ZipArchive.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		DB5CC4B21ECEC5DF003FB1EB /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC4B31ECEC5DF003FB1EB /* aes.h */,
+				DB5CC4B41ECEC5DF003FB1EB /* aes_via_ace.h */,
+				DB5CC4B51ECEC5DF003FB1EB /* aescrypt.c */,
+				DB5CC4B61ECEC5DF003FB1EB /* aeskey.c */,
+				DB5CC4B71ECEC5DF003FB1EB /* aesopt.h */,
+				DB5CC4B81ECEC5DF003FB1EB /* aestab.c */,
+				DB5CC4B91ECEC5DF003FB1EB /* aestab.h */,
+				DB5CC4BA1ECEC5DF003FB1EB /* brg_endian.h */,
+				DB5CC4BB1ECEC5DF003FB1EB /* brg_types.h */,
+				DB5CC4BC1ECEC5DF003FB1EB /* entropy.c */,
+				DB5CC4BD1ECEC5DF003FB1EB /* entropy.h */,
+				DB5CC4BE1ECEC5DF003FB1EB /* fileenc.c */,
+				DB5CC4BF1ECEC5DF003FB1EB /* fileenc.h */,
+				DB5CC4C01ECEC5DF003FB1EB /* hmac.c */,
+				DB5CC4C11ECEC5DF003FB1EB /* hmac.h */,
+				DB5CC4C21ECEC5DF003FB1EB /* prng.c */,
+				DB5CC4C31ECEC5DF003FB1EB /* prng.h */,
+				DB5CC4C41ECEC5DF003FB1EB /* pwd2key.c */,
+				DB5CC4C51ECEC5DF003FB1EB /* pwd2key.h */,
+				DB5CC4C61ECEC5DF003FB1EB /* sha1.c */,
+				DB5CC4C71ECEC5DF003FB1EB /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		DB5CC4C91ECEC5DF003FB1EB /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC4CA1ECEC5DF003FB1EB /* crypt.h */,
+				DB5CC4CB1ECEC5DF003FB1EB /* ioapi.c */,
+				DB5CC4CC1ECEC5DF003FB1EB /* ioapi.h */,
+				DB5CC4CD1ECEC5DF003FB1EB /* mztools.c */,
+				DB5CC4CE1ECEC5DF003FB1EB /* mztools.h */,
+				DB5CC4CF1ECEC5DF003FB1EB /* unzip.c */,
+				DB5CC4D01ECEC5DF003FB1EB /* unzip.h */,
+				DB5CC4D11ECEC5DF003FB1EB /* zip.c */,
+				DB5CC4D21ECEC5DF003FB1EB /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		DB5CC4E81ECEC600003FB1EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC4E91ECEC600003FB1EB /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB5CC20B1ECEC2BD003FB1EB /* TrainExcel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5CC21B1ECEC2BD003FB1EB /* Build configuration list for PBXNativeTarget "TrainExcel" */;
+			buildPhases = (
+				DB5CC2081ECEC2BD003FB1EB /* Sources */,
+				DB5CC2091ECEC2BD003FB1EB /* Frameworks */,
+				DB5CC20A1ECEC2BD003FB1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrainExcel;
+			productName = TrainExcel;
+			productReference = DB5CC20C1ECEC2BD003FB1EB /* TrainExcel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB5CC2041ECEC2BD003FB1EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Ericji;
+				TargetAttributes = {
+					DB5CC20B1ECEC2BD003FB1EB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VNBQ242BN8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB5CC2071ECEC2BD003FB1EB /* Build configuration list for PBXProject "TrainExcel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB5CC2031ECEC2BD003FB1EB;
+			productRefGroup = DB5CC20D1ECEC2BD003FB1EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB5CC20B1ECEC2BD003FB1EB /* TrainExcel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB5CC20A1ECEC2BD003FB1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5CC2141ECEC2BD003FB1EB /* Assets.xcassets in Resources */,
+				DB5CC2171ECEC2BD003FB1EB /* Main.storyboard in Resources */,
+				DB5CC4E11ECEC5DF003FB1EB /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB5CC2081ECEC2BD003FB1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5CC47F1ECEC4D6003FB1EB /* BRACellFill.m in Sources */,
+				DB5CC4AB1ECEC55B003FB1EB /* NSDictionary+DeepCopy.m in Sources */,
+				DB5CC47D1ECEC4D6003FB1EB /* BRACalcChainCell.m in Sources */,
+				DB5CC4AD1ECEC55B003FB1EB /* NSDictionary+OpenXmlString.m in Sources */,
+				DB5CC4B01ECEC58C003FB1EB /* XMLDictionary.m in Sources */,
+				DB5CC4881ECEC4D6003FB1EB /* BRADrawing.m in Sources */,
+				DB5CC4D91ECEC5DF003FB1EB /* aeskey.c in Sources */,
+				DB5CC4821ECEC4D6003FB1EB /* BRAColumn.m in Sources */,
+				DB5CC48B1ECEC4D6003FB1EB /* BRAMergeCell.m in Sources */,
+				DB5CC49B1ECEC4D6003FB1EB /* BRAWorksheetDrawing.m in Sources */,
+				DB5CC4961ECEC4D6003FB1EB /* BRASheet.m in Sources */,
+				DB5CC2121ECEC2BD003FB1EB /* ViewController.swift in Sources */,
+				DB5CC4E71ECEC5DF003FB1EB /* SSZipArchive.m in Sources */,
+				DB5CC4DC1ECEC5DF003FB1EB /* fileenc.c in Sources */,
+				DB5CC4E41ECEC5DF003FB1EB /* unzip.c in Sources */,
+				DB5CC4931ECEC4D6003FB1EB /* BRARow.m in Sources */,
+				DB5CC48C1ECEC4D6003FB1EB /* BRANumberFormat.m in Sources */,
+				DB5CC4E21ECEC5DF003FB1EB /* ioapi.c in Sources */,
+				DB5CC4811ECEC4D6003FB1EB /* BRACellRange.m in Sources */,
+				DB5CC48A1ECEC4D6003FB1EB /* BRAImage.m in Sources */,
+				DB5CC4901ECEC4D6003FB1EB /* BRAOpenXmlSubElement.m in Sources */,
+				DB5CC4DD1ECEC5DF003FB1EB /* hmac.c in Sources */,
+				DB5CC4DF1ECEC5DF003FB1EB /* pwd2key.c in Sources */,
+				DB5CC4E61ECEC5DF003FB1EB /* SSZipArchive+Swift.swift in Sources */,
+				DB5CC4951ECEC4D6003FB1EB /* BRASharedStrings.m in Sources */,
+				DB5CC4851ECEC4D6003FB1EB /* BRAContentTypes.m in Sources */,
+				DB5CC4911ECEC4D6003FB1EB /* BRARelationship.m in Sources */,
+				DB5CC48D1ECEC4D6003FB1EB /* BRAOfficeDocument.m in Sources */,
+				DB5CC48E1ECEC4D6003FB1EB /* BRAOfficeDocumentPackage.m in Sources */,
+				DB5CC4941ECEC4D6003FB1EB /* BRASharedString.m in Sources */,
+				DB5CC4DB1ECEC5DF003FB1EB /* entropy.c in Sources */,
+				DB5CC47C1ECEC4D6003FB1EB /* BRACalcChain.m in Sources */,
+				DB5CC4891ECEC4D6003FB1EB /* BRAElementWithRelationships.m in Sources */,
+				DB5CC47E1ECEC4D6003FB1EB /* BRACell.m in Sources */,
+				DB5CC4E01ECEC5DF003FB1EB /* sha1.c in Sources */,
+				DB5CC4921ECEC4D6003FB1EB /* BRARelationships.m in Sources */,
+				DB5CC4DE1ECEC5DF003FB1EB /* prng.c in Sources */,
+				DB5CC4831ECEC4D6003FB1EB /* BRAComment.m in Sources */,
+				DB5CC4871ECEC4D6003FB1EB /* BRAContentTypesOverride.m in Sources */,
+				DB5CC4AA1ECEC55B003FB1EB /* NativeFont+BoldItalic.m in Sources */,
+				DB5CC2101ECEC2BD003FB1EB /* AppDelegate.swift in Sources */,
+				DB5CC4E51ECEC5DF003FB1EB /* zip.c in Sources */,
+				DB5CC4E31ECEC5DF003FB1EB /* mztools.c in Sources */,
+				DB5CC49A1ECEC4D6003FB1EB /* BRAWorksheet.m in Sources */,
+				DB5CC4AC1ECEC55B003FB1EB /* NSDictionary+OpenXMLDictionaryParser.m in Sources */,
+				DB5CC4DA1ECEC5DF003FB1EB /* aestab.c in Sources */,
+				DB5CC4981ECEC4D6003FB1EB /* BRATheme.m in Sources */,
+				DB5CC4A91ECEC55B003FB1EB /* NativeColor+OpenXML.m in Sources */,
+				DB5CC4A81ECEC55B003FB1EB /* NativeColor+HTML.m in Sources */,
+				DB5CC4991ECEC4D6003FB1EB /* BRAVmlDrawing.m in Sources */,
+				DB5CC4841ECEC4D6003FB1EB /* BRAComments.m in Sources */,
+				DB5CC4801ECEC4D6003FB1EB /* BRACellFormat.m in Sources */,
+				DB5CC48F1ECEC4D6003FB1EB /* BRAOpenXmlElement.m in Sources */,
+				DB5CC4861ECEC4D6003FB1EB /* BRAContentTypesDefaultExtension.m in Sources */,
+				DB5CC4D81ECEC5DF003FB1EB /* aescrypt.c in Sources */,
+				DB5CC4971ECEC4D6003FB1EB /* BRAStyles.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB5CC2151ECEC2BD003FB1EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB5CC2161ECEC2BD003FB1EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB5CC2191ECEC2BD003FB1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB5CC21A1ECEC2BD003FB1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		DB5CC21C1ECEC2BD003FB1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VNBQ242BN8;
+				INFOPLIST_FILE = TrainExcel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ericji.TrainExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrainExcel/TrainExcel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB5CC21D1ECEC2BD003FB1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VNBQ242BN8;
+				INFOPLIST_FILE = TrainExcel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ericji.TrainExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrainExcel/TrainExcel-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB5CC2071ECEC2BD003FB1EB /* Build configuration list for PBXProject "TrainExcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5CC2191ECEC2BD003FB1EB /* Debug */,
+				DB5CC21A1ECEC2BD003FB1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5CC21B1ECEC2BD003FB1EB /* Build configuration list for PBXNativeTarget "TrainExcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5CC21C1ECEC2BD003FB1EB /* Debug */,
+				DB5CC21D1ECEC2BD003FB1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB5CC2041ECEC2BD003FB1EB /* Project object */;
+}
